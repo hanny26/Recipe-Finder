@@ -11,10 +11,10 @@ const App = () => {
 
   const fetchRecipes = async (query) => {
     try {
-      const response = await axios.get(`https://api.spoonacular.com/recipes/complexSearch`, {
+      const response = await axios.get(`the_link_http`, {
         params: {
           query,
-          apiKey: '4f76f71c8d2d4b6dba84d66c86cf8ff1', // Replace with your API key from Spoonacular
+          apiKey: 'api_key', // Replace with your API key from Spoonacular
         },
       });
       setRecipes(response.data.results);
